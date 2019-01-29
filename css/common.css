@@ -129,17 +129,55 @@ section p {
 
 section>.teams>li {
     float: left;
-    width: 33.33%;
+    width: 25%;
     padding: 10px 20px;
-    border: 1px solid red;
 }
-
-section .team-logo:nth-child(1) {
+section>.teams>li p{
+    font-size: 14px;
+    color: #333;
+    margin-top:0;
+}
+section .teams li .team-logo{
     display: inline-block;
-    background: url(../img/eg.png) center center no-repeat;
     background-size: cover;
+
+}
+section .teams .team-logo {
+    display: inline-block;
     width: 200px;
     height: 200px;
+}
+section .teams li:nth-child(1) .team-logo{
+    background: url(../img/team/navi.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(2) .team-logo{
+    background: url(../img/team/ig.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(3) .team-logo{
+    background: url(../img/team/alliance.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(4) .team-logo{
+    background: url(../img/team/newbee.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(5) .team-logo{
+    background: url(../img/team/eg.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(6) .team-logo{
+    background: url(../img/team/wings.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(7) .team-logo{
+    background: url(../img/team/liquid.png) center center no-repeat;
+    background-size: contain;
+}
+section .teams li:nth-child(8) .team-logo{
+    background: url(../img/team/og.png) center center no-repeat;
+    background-size: contain;
 }
 
 section .heros figure {
@@ -186,7 +224,7 @@ section .timeline .img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid lightblue;
+    border: 6px solid lightblue;
 }
 
 section .timeline .img {
@@ -221,7 +259,7 @@ section .timeline>li:nth-child(even) dl {
 }
 
 section .timeline dt {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -234,11 +272,11 @@ section .timeline dd:nth-child(2) {
 section .timeline>li::before {
     content: '';
     position: absolute;
-    left: calc(50% - 2px);
+    left: calc(50% - 1px);
     top: 100px;
     display: inline-block;
     height: 55px;
-    width: 4px;
+    width: 2px;
     background: lightblue;
 }
 
