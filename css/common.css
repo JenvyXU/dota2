@@ -1,3 +1,4 @@
+/*css reset*/
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ body {
 }
 
 body {
-    font: 14px/1.5 Arial;
+    font: 14px/1.5 Arial sans-serif;
     background: #F7F7F7;
 }
 
@@ -44,11 +45,27 @@ body {
     background: #f7ba3e;
     border-radius: 4px;
     opacity: .8;
-    transition: all .3s;
-}
+    
+} 
 
 .button:hover {
     opacity: 1;
+    transition: all .5s;
+}
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+section p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /*自定义样式*/
@@ -57,14 +74,16 @@ header {
     position: relative;
     height: 100%;
     min-height: 800px;
-    background: #000 url('../img/dota2-bg.jpg') center center no-repeat;
+    background: url('../img/dota2-bg.jpg') center center no-repeat;
     background-size: cover;
 }
-header nav{
-    width:1200px;
-    margin:0 auto;
-    background: rgba(0,0,0,.6)
+
+header nav {
+    width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .6);
 }
+
 header .logo {
     font-size: 40px;
     color: #AE3E29;
@@ -105,14 +124,13 @@ header>.intro {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 50px;
     text-align: center;
     color: #fff;
-    margin-top: 50px;
 }
 
 header>.intro video {
     width: 960px;
-
 }
 
 /* header>.intro h2 {
@@ -127,22 +145,6 @@ header .intro .button {
     margin-top: 40px;
 }
 
-section {
-    text-align: center;
-    margin-top: 20px;
-}
-
-section h2 {
-    font-size: 40px;
-    margin-top: 120px;
-    margin-bottom: 60px;
-}
-
-section p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
 section>.teams>li {
     float: left;
     width: 25%;
@@ -155,13 +157,9 @@ section>.teams>li p {
     margin-top: 0;
 }
 
-section .teams li .team-logo {
-    display: inline-block;
-    background-size: cover;
-}
-
 section .teams .team-logo {
     display: inline-block;
+    background-size: cover;
     width: 200px;
     height: 200px;
 }
@@ -460,5 +458,4 @@ footer .button {
     border: none;
     margin-top: 100px;
     cursor: pointer;
-
 }
