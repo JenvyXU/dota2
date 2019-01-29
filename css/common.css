@@ -200,12 +200,13 @@ section .heros figcaption {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
+    color: #333
 }
 
 section .heros figure p {
     font-size: 14px;
-    font-weight: normal;
-    color: #333;
+    color: #777788;
+    margin-top: 0;
 }
 
 section .timeline>li {
@@ -224,7 +225,7 @@ section .timeline .img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 6px solid lightblue;
+    border: 6px solid #F1F1F1;
 }
 
 section .timeline .img {
@@ -243,6 +244,7 @@ section .timeline>li:nth-child(odd) img {
 
 section .timeline>li:nth-child(odd) dl {
     margin-right: 120px;
+    color: #333;
 }
 
 section .timeline>li:nth-child(even) img {
@@ -266,7 +268,9 @@ section .timeline dt {
 section .timeline dd:nth-child(2) {
     font-size: 16px;
     font-weight: bold;
-    color: red;
+}
+section .timeline dd:nth-child(3) {
+    color: #777;
 }
 
 section .timeline>li::before {
@@ -275,9 +279,32 @@ section .timeline>li::before {
     left: calc(50% - 1px);
     top: 100px;
     display: inline-block;
-    height: 55px;
     width: 2px;
-    background: lightblue;
+    background: #F1F1F1;
+}
+section .timeline>li:nth-child(1)::before {
+    height: 250px;
+}
+section .timeline>li:nth-child(2)::before {
+    height: 145px;
+}
+section .timeline>li:nth-child(3)::before {
+    height: 80px;
+}
+section .timeline>li:nth-child(4)::before {
+    height: 80px;
+}
+section .timeline>li:nth-child(5)::before {
+    height: 185px;
+}
+section .timeline>li:nth-child(6)::before {
+    height: 227px;
+}
+section .timeline>li:nth-child(7)::before {
+    height: 165px;
+}
+section .timeline>li:nth-child(8)::before {
+    height: 0;
 }
 
 section .timeline>li:last-child::before {
