@@ -44,6 +44,7 @@ body {
     background: #f7ba3e;
     border-radius: 4px;
     opacity: .8;
+    transition: all .3s;
 }
 
 .button:hover {
@@ -60,15 +61,18 @@ header {
     background-size: cover;
 }
 
-header nav {
-    background: rgba(0, 0, 0, .6)
-}
-
 header .logo {
     font-size: 40px;
     color: #fff;
+    padding: 0 5px;
+    font-weight: bold;
     float: left;
     margin-top: 4px;
+    transition: all .3s;
+}
+
+header .logo:hover {
+    color: #f7ba3e;
 }
 
 header .nav {
@@ -84,7 +88,8 @@ header .nav a {
     display: inline-block;
     /*a是一个inline元素，加padding无法增高*/
     font-size: 16px;
-    padding: 20px 10px;
+    padding: 20px 12px;
+    transition: all .3s;
 }
 
 header .nav a:hover {
@@ -100,13 +105,18 @@ header>.intro {
     color: #fff;
 }
 
-header>.intro h2 {
+header>.intro video {
+    width: 960px;
+    margin-top: 20px;
+}
+
+/* header>.intro h2 {
     font-size: 46px;
 }
 
 header>.intro h3 {
     font-size: 36px;
-}
+} */
 
 header .intro .button {
     margin-top: 40px;
@@ -119,7 +129,8 @@ section {
 
 section h2 {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 120px;
+    margin-bottom: 60px;
 }
 
 section p {
@@ -132,50 +143,60 @@ section>.teams>li {
     width: 25%;
     padding: 10px 20px;
 }
-section>.teams>li p{
+
+section>.teams>li p {
     font-size: 14px;
     color: #333;
-    margin-top:0;
+    margin-top: 0;
 }
-section .teams li .team-logo{
+
+section .teams li .team-logo {
     display: inline-block;
     background-size: cover;
-
 }
+
 section .teams .team-logo {
     display: inline-block;
     width: 200px;
     height: 200px;
 }
-section .teams li:nth-child(1) .team-logo{
+
+section .teams li:nth-child(1) .team-logo {
     background: url(../img/team/navi.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(2) .team-logo{
+
+section .teams li:nth-child(2) .team-logo {
     background: url(../img/team/ig.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(3) .team-logo{
+
+section .teams li:nth-child(3) .team-logo {
     background: url(../img/team/alliance.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(4) .team-logo{
+
+section .teams li:nth-child(4) .team-logo {
     background: url(../img/team/newbee.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(5) .team-logo{
+
+section .teams li:nth-child(5) .team-logo {
     background: url(../img/team/eg.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(6) .team-logo{
+
+section .teams li:nth-child(6) .team-logo {
     background: url(../img/team/wings.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(7) .team-logo{
+
+section .teams li:nth-child(7) .team-logo {
     background: url(../img/team/liquid.png) center center no-repeat;
     background-size: contain;
 }
-section .teams li:nth-child(8) .team-logo{
+
+section .teams li:nth-child(8) .team-logo {
     background: url(../img/team/og.png) center center no-repeat;
     background-size: contain;
 }
@@ -225,7 +246,7 @@ section .timeline .img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 6px solid #F1F1F1;
+    border: 6px solid #ccc;
 }
 
 section .timeline .img {
@@ -269,6 +290,7 @@ section .timeline dd:nth-child(2) {
     font-size: 16px;
     font-weight: bold;
 }
+
 section .timeline dd:nth-child(3) {
     color: #777;
 }
@@ -280,29 +302,37 @@ section .timeline>li::before {
     top: 100px;
     display: inline-block;
     width: 2px;
-    background: #F1F1F1;
+    background: #ccc;
 }
+
 section .timeline>li:nth-child(1)::before {
     height: 250px;
 }
+
 section .timeline>li:nth-child(2)::before {
     height: 145px;
 }
+
 section .timeline>li:nth-child(3)::before {
     height: 80px;
 }
+
 section .timeline>li:nth-child(4)::before {
     height: 80px;
 }
+
 section .timeline>li:nth-child(5)::before {
     height: 185px;
 }
+
 section .timeline>li:nth-child(6)::before {
     height: 227px;
 }
+
 section .timeline>li:nth-child(7)::before {
     height: 165px;
 }
+
 section .timeline>li:nth-child(8)::before {
     height: 0;
 }
@@ -356,6 +386,7 @@ section .player .social a {
     color: #fff;
     background: #333;
     padding: 10px;
+    transition: all .3s;
 }
 
 section .player a:hover {
@@ -373,7 +404,6 @@ footer {
     background: url(../img/footer-bg.png) center center no-repeat;
     background-size: cover;
     padding: 160px 0;
-
 }
 
 footer h2 {
@@ -393,9 +423,8 @@ footer .message {
     vertical-align: top;
 }
 
-
 footer .contact input,
-footer .message textarea  {
+footer .message textarea {
     width: 100%;
     font-size: 16px;
     border-radius: 4px;
@@ -404,24 +433,27 @@ footer .message textarea  {
     padding: 20px;
     margin-top: 30px;
 }
+
 footer .message textarea {
     height: 240px;
     resize: none;
 }
+
 footer .contact input::placeholder,
 footer .message textarea::placeholder {
     color: #bbb;
 }
+
 footer .contact input:focus,
-footer .message textarea:focus  {
-    border:1px solid #f7ba3e;
+footer .message textarea:focus {
+    border: 1px solid #f7ba3e;
     border-radius: 4px;
 }
-footer .button{
-    padding:20px 40px;
+
+footer .button {
+    padding: 20px 40px;
     border: none;
     margin-top: 100px;
     cursor: pointer;
+
 }
-
-
