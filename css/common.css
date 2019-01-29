@@ -60,11 +60,15 @@ header {
     background: #000 url('../img/dota2-bg.jpg') center center no-repeat;
     background-size: cover;
 }
-
+header nav{
+    width:1200px;
+    margin:0 auto;
+    background: rgba(0,0,0,.6)
+}
 header .logo {
     font-size: 40px;
-    color: #fff;
-    padding: 0 5px;
+    color: #AE3E29;
+    padding: 0px 20px;
     font-weight: bold;
     float: left;
     margin-top: 4px;
@@ -103,11 +107,12 @@ header>.intro {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+    margin-top: 50px;
 }
 
 header>.intro video {
     width: 960px;
-    margin-top: 20px;
+
 }
 
 /* header>.intro h2 {
